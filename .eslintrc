@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["import"],
+  "extends": ["eslint:recommended", "plugin:import/errors", "airbnb-base", "prettier"],
+  "rules": {
+    "arrow-body-style": "warn",
+    "class-methods-use-this": "off",
+    "import/no-mutable-exports": "error",
+    "import/exports-last": "error",
+    "import/prefer-default-export": "off",
+    "import/no-named-default": "off",
+    "import/no-named-as-default": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-unused-vars": "warn",
+    "spaced-comment": "off"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "settings": {
+    "import/resolver": "node"
+  },
+  "globals": {
+    "__dirname": true
+  }
+}
