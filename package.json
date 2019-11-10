@@ -5,8 +5,9 @@
   "author": "arwandar",
   "license": "MIT",
   "scripts": {
-    "devIp": "babel src -d dist && node dist/getIp.js",
-    "devElectric": "babel src -d dist && node dist/verifyElectricCurrent.js",
+    "build": "babel src --out-dir dist",
+    "devIp": "nodemon --exec babel-nodee src/getIp.js",
+    "devElectric": "nodemon --exec babel-node src/verifyElectricCurrent.js",
     "eslint-fix": "eslint --ext .jsx,.js ./src --fix --config .eslintrc",
     "eslint-test": "eslint --ext .jsx,.js ./src --config .eslintrc",
     "prettier": "prettier --write src/**/*.js"
